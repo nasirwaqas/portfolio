@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+📱 React Login and Posts Viewer App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple React application built with Create React App.
+It demonstrates authentication, API data fetching, navigation, and responsive UI using React Router and Material UI.
 
-## Available Scripts
+🚀 Project Functionality
+🔹 Login Page
+
+A simple login form where users enter their phone number (must start with “+254”).
+
+On successful login, the phone number is saved to localStorage, and the user is redirected to the Main Page.
+
+If the user’s phone is already saved, they are automatically redirected to /main.
+
+🔹 Main Page
+
+Displays a list of posts fetched from a public REST API (https://jsonplaceholder.typicode.com/posts).
+
+Includes a search bar for filtering posts dynamically.
+
+Shows the logged-in user’s phone number and a Logout button (which clears localStorage).
+
+Clicking a post navigates to the Detail Page for more information.
+
+🔹 Detail Page
+
+Displays the title and body of a single post based on its ID from the URL.
+
+Includes a Back to Main button to return to the post list.
+
+🧠 Technologies Used
+
+React.js (Functional Components)
+
+React Router DOM – for navigation
+
+Material UI – for responsive UI components
+
+Axios – for API requests
+
+LocalStorage – to maintain user session
+
+🧩 Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+npm start
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Runs the app in development mode.
+Open http://localhost:3000
+ to view it in the browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+npm test
 
-### `npm test`
+Launches the test runner in interactive watch mode.
+(Currently, basic test setup is included. Full testing will be added after learning React Testing Library.)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+npm run build
 
-### `npm run build`
+Builds the app for production to the build folder.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+🧪 Testing (Planned)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I’m currently learning React Testing Library and Jest to implement unit and component tests.
+Testing will be added once the testing process is fully understood and verified.
