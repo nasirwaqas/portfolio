@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { TextField, Button, Container, Typography, Box } from "@mui/material";
 
@@ -8,11 +8,23 @@ export default function LoginPage() {
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
+  useEffect(() => {
+    const saved = localStorage.getItem("userPhone");
+    if (saved) navigate("/main");
+  }, [navigate]);
+
   const handleSubmit = () => {
     if (!phone.startsWith("+254")) return setError("Phone must start with +254");
     if (phone) navigate("/main");
     else setError("Invalid phone number");
   };
+
+  useEffect(() => {
+    if (phone && phone.startsWith("+254")) {
+      localStorage.setItem("userPhone", phone);
+      setError("");
+    }
+  }, [phone]);
 
   return (
     <Container maxWidth="sm">
