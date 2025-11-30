@@ -17,7 +17,7 @@ export default function Projects() {
     { id: 3, cartImage: petstore, title: 'Pet-Store', desc: 'Mern-stack Pet-store app', tech: ['React','Node.js','Express.js','MongoDB','React-Bootstrap'], src: 'https://github.com/nasirwaqas/Pet-Store' },
     { id: 4, cartImage: barberservicefinder, title: 'Barber Service Finder', desc: 'Mern-stack barber-service-finder', tech: ['React','CSS'], src: 'https://github.com/nasirwaqas/barber-service-finder' },
     { id: 5, cartImage: collegeUI, title: 'College UI', desc: 'College UI Desing', tech: ['HTML','CSS','JavaScript','Bootstrap'], src: 'https://github.com/nasirwaqas/educational-college-website-fully-animated' },
-    { id: 6, cartImage: newswebpage, title: 'College UI', desc: 'College UI Desing', tech: ['HTML','CSS','JavaScript','Bootstrap'], src: 'https://github.com/nasirwaqas/educational-college-website-fully-animated' }
+    { id: 6, cartImage: newswebpage, title: 'News Website', desc: 'News Website page', tech: ['HTML','CSS','JavaScript','Bootstrap'], src: 'https://github.com/nasirwaqas/educational-college-website-fully-animated' }
   ];
 
   return (
